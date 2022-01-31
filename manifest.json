@@ -1,0 +1,35 @@
+{
+    "name": "BBB-Kamera-Exam-Abgleich",
+    "description": "BBB-Kamera-Exam-Abgleich",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "scripting", "storage"],
+    "content_scripts": [
+      {
+        "matches": ["https://*.bbb.zih.tu-dresden.de/*"],
+        "run_at": "document_idle",
+        "js": ["jquery.js",
+               "contentScriptBBB.js"
+              ]
+      },
+      {
+        "matches": ["https://exam.zih.tu-dresden.de/*"],
+        "run_at": "document_idle",
+        "js": ["jquery.js",
+               "contentScriptEXAM.js"],
+        "css": ["markClass.css"]
+      }
+    ],
+    "action": {
+      "default_icon": {
+        "16": "icon_16.png",
+        "48": "icon_48.png",
+        "128": "icon_128.png"
+      },
+      "default_popup": "popup.html"
+    },
+    "icons": { "16": "icon_16.png",
+               "48": "icon_48.png",
+               "128": "icon_128.png"
+    }
+}

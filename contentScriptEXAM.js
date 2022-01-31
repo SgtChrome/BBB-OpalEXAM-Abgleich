@@ -11,9 +11,10 @@ function fetchStuff() {
     // Look up the names written to local storage by the BBB script
         chrome.storage.local.get(['names', 'updated'],
             (result) => {
-                AppObject.names = result.names
-                AppObject.updated = result.updated
-                resolve()
+                AppObject.names = result.names;
+                AppObject.updated = result.updated;
+                if(result.names) resolve(true);
+                else resolve(false);
             }
     ));
 }
@@ -21,7 +22,7 @@ const markNames = async function() {
     // Immediately quit if there is no table on this site
     if (!$('table').length) return;
     // Look up the new data
-    await fetchStuff();
+    if (!(await fetchStuff())) return
     // Loop over every row
     $('tbody > tr').each(function() {
         let currentName = '';

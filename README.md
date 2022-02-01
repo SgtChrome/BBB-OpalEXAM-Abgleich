@@ -17,5 +17,5 @@
 
 ## Sonstiges
 
-Wer skeptisch oder interessiert daran ist, was passiert, kann gerne nochmal in den Code reinschauen. Ich habe in den Dateien alles kommentiert.
+Wer skeptisch oder interessiert daran ist, was passiert, kann gerne nochmal in den Code reinschauen (besonders in [contentScriptBBB.js](contentScriptBBB.js) und [contentScriptEXAM.js](contentScriptEXAM.js)). Ich habe in den Dateien alles kommentiert.\
 Bitte behaltet auch im Hinterkopf, dass die Erweiterung noch nicht im tatsächlichen Betrieb getestet wurde (Stand 01.02.2022).

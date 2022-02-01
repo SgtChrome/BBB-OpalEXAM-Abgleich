@@ -4,7 +4,7 @@
 
 1. Klicke auf den grünen Button **Code** und dann auf **Download ZIP**.
 2. Entpacke das Archiv in einen Ordner deiner Wahl.
-3. Gehe zu <chrome://extensions/>.
+3. Gehe zu [chrome://extensions/](chrome://extensions).
 4. Aktiviere den **Entwicklermodus** oben rechts.
 5. Klicke auf **Entpackte Erweiterung laden**.
 6. Wähle den Ordner mit der Erweiterung aus.
